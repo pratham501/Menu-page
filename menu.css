@@ -1,0 +1,456 @@
+@font-face {
+    font-family: 'Space Gortesk';
+    src: url('SpaceGrotesk-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Poppins extra light';
+    src: url('Poppins-ExtraLight.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('Roboto-Regular.ttf') format('truetype');
+}
+
+body{
+    background-color: #fdfdfd;
+}
+.menu-button{
+    font-family: arial;
+    border: 2px solid #2c1111;
+    height: 40px;
+    padding: 12px 12px;
+    border-radius: 3px;
+    background-color: #fff;
+    font-weight: bold;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+.menu-button:hover{
+    color: #ffffff;
+    background-color: #620674 ;
+}   
+.menu-nav h1{
+    font-family: arial;
+}
+
+.menu-nav{
+    background-color: #fff;
+    margin-top: 200px;
+    margin-left: 100px;
+}
+
+/* .dish-col1,.dish-col2,.dish-col3{
+    border: 1px solid #000;
+    height: 160px;
+    background-color: bisque;
+} */
+
+
+.menu-dishes{
+    /* background-color: #D8C1DD ; */
+    
+    margin-top: 100px;
+    width: 900px;
+    margin-left: 100px;
+    margin-bottom: 120px;
+}
+
+.rotis {
+
+    display: grid;
+    grid-template-columns: 390px 390px ;
+    column-gap: 70px;
+    row-gap: 50px;
+}
+
+.curries
+{
+    
+
+    display: grid;
+    grid-template-columns: 390px 390px ;
+    column-gap: 70px;
+    row-gap: 50px;
+    display: none;
+}
+
+.desserts
+{
+    
+
+    display: grid;
+    grid-template-columns: 390px 390px ;
+    column-gap: 70px;
+    row-gap: 50px;
+    display: none;
+}
+
+.healthynhearty
+{
+    
+
+    display: grid;
+    grid-template-columns: 390px 390px ;
+    column-gap: 70px;
+    row-gap: 50px;
+    display: none;
+}
+
+.soups
+{
+    
+
+    display: grid;
+    grid-template-columns: 390px 390px ;
+    column-gap: 70px;
+    row-gap: 50px;
+    display: none;
+}
+
+.beverages
+{
+    
+
+    display: grid;
+    grid-template-columns: 390px 390px ;
+    column-gap: 70px;
+    row-gap: 50px;
+    display: none;
+}
+
+.snacks
+{
+    
+
+    display: grid;
+    grid-template-columns: 390px 390px ;
+    column-gap: 70px;
+    row-gap: 50px;
+    display: none;
+}
+
+.starters
+{
+    
+
+    display: grid;
+    grid-template-columns: 390px 390px ;
+    column-gap: 70px;
+    row-gap: 50px;
+    display: none;
+}
+
+.listing{
+    /* margin-top: 100px; */
+    /* border: 1px solid #000; */
+    height: 220px;
+    background-color: ;
+    border: 1px solid #595959;
+    border-radius: 3px;
+    padding: 10px 15px 0 15px;
+}
+
+.listing h2{
+    margin-bottom: 10px;
+}
+
+.listing-price{
+    font-size: 17px;
+    color: #000;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: Poppins extra light;
+    font-weight: bold;
+}
+
+.dish-description{
+    /* flex: 2; */
+    margin-top: 0;
+    font-size: 15px;
+    font-family: Poppins extra light;
+    /* font-weight: 400; */
+    width: 320px;
+    height: 80px;
+    background-color:none;
+}
+
+.button-trial{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.adding-button{
+    background-color: #fff;
+    height: 40px;
+    border-radius: 3px;
+    border: 2px solid #696969;
+    cursor: pointer;
+    padding: 8px 9px 4px 8px ;
+}
+
+.adding-button:hover{
+    background-color: #D8C1DD;
+
+}
+
+.add-cart{
+    display: cover;
+    width: 20px;
+
+} 
+
+.inpage-cart{
+    width: 390px;
+    min-height: 245px;
+    height: auto;
+    border: 1px solid #000;
+    margin-top: 100px;
+    margin-left: 60px;
+    text-align: center;  
+    position: sticky;
+    top: 25px;  
+    padding: 15px 0 80px 0;
+    /* box-sizing: content-box;
+    display: inline-block; */
+    align-self: start;
+}
+
+.inpage-cart p{
+    font-family: Space Gortesk;
+    /* width: 180px; */
+    font-size: 25px;
+    font-weight: 600;
+    margin-top: 15px;
+    /* margin-left: 55px; */
+
+}
+.menu{
+    display: flex;
+    /* background-color: rgb(196, 236, 223); */
+}
+
+.empty-cart{
+    width: 80px;
+    object-fit: cover;
+}
+
+#quantitywindow{
+    top: -150%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: 1px solid #000;
+    position: fixed;
+    z-index: 25;
+    background-color:#fff;
+    height: 60vh;
+    width: 40%;  
+    padding:  0 15px;
+    opacity: 0;
+    transition: transform 100ms ease-in-out;
+    border-radius: 5px;
+}
+
+#quantitywindow.active{
+    top: 35%;
+    opacity: 1;
+    transform: translate(-50%,-50%);
+}
+
+#quantitywindow h2{
+    font-size: 2em;
+    font-family: Space Gortesk;
+
+}
+
+#quantitywindow p{
+    font-size: 1.1em;
+    font-family: Poppins extra light;
+}
+
+#close-button{
+    position: absolute;
+    top: 20px;
+    padding: 8px 12px;
+    right: 15px;
+    border: 1px solid black;
+    border-radius: 40px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+#close-button:hover{
+    color: #ffffff;
+    background-color: #620674 ;
+}
+
+.backdrop{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    background-color: rgba(0,0,0,0.5);
+    transition: 100ms ;
+    pointer-events: none;
+    
+}
+
+.backdrop.active{
+    opacity: 1;
+    pointer-events: all;
+
+}
+
+.addquantity{
+    display: flex;
+    height: 50px;
+    width: 20%;
+    background-color: aliceblue;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 2px;
+}
+
+.side-buttons{
+    font-size: 25px;
+    background-color: rgba(0,0,0,0);
+    border: none;
+    cursor: pointer;
+    padding: 14px;
+}
+
+.total{
+    padding: 12px 12px;
+    height: 50px;
+    width: 35%;
+    background-color: aliceblue;
+    border: 1px solid black;
+    margin-left: 1.3%;
+    font-size: 1rem;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.add{
+    position: relative;
+    display: flex;
+    background-color: none;
+    justify-content: end;
+    align-items: center;
+    width: 100%;
+    top: 28.5vh;
+}
+
+.items-added{
+
+    display: none;
+    font-size: 15px;
+    font-family: arial;
+    background-color: none;
+    height: auto;
+   
+}
+
+
+#cart-items{  
+    background-color: #fff;
+    border-collapse: collapse; 
+    border: 2px black;
+    margin-left: 4.5%;
+    margin-top: 14px;
+    width: 90%;
+    font-family: Roboto;
+}
+
+#cart-items thead tr{
+
+    border-bottom: 1px solid rgb(0, 0, 0);
+    font-size: 17px;
+    text-align: left;
+
+}
+
+#cart-items tbody td{
+
+    text-align: left;
+    font-family: Roboto;
+    font-size: 17px;
+}
+
+#cart-items tfoot tr{
+
+    border-top: 1px solid black;
+    text-align: left;
+    font-family: Roboto;
+    font-size: 17px;
+
+}
+
+#cart-items td,th{
+    padding: 7px;
+}
+
+/* .items-added .header{
+
+    font-size: 18px;
+} */
+
+.edit-buttons{
+    display: flex;
+}
+
+.edit-btn{
+    width: 27px;
+    display: flex;
+    border: none;
+    cursor: pointer;
+    background-color: rgb(169, 215, 255);
+    justify-content: center;
+    align-items: start;
+    padding: 0;
+
+}
+
+.edit-img{
+    width: 27px;
+}
+
+.delete-btn{
+    margin-left: 8px;
+    display: flex;
+    border: none;
+    cursor: pointer;
+    background-color:rgb(169, 215, 255);
+    width: 20px;
+    justify-content: center;
+    
+}
+
+/* .delete-btn div{
+    text-align: left;
+    background-color: aquamarine;
+} */
+
+.delete-img{
+    width: 22px;
+}
+
+.checkout-btn{
+
+    font-family: Arial;
+    font-size: 17.5px;
+    padding: 12px 12px;
+    width: 90%;
+    position: absolute;
+    bottom: 15px;
+    display: none;
+    margin-left: 20px;
+    border: 1px solid #000;
+    border-radius: 2px;
+
+}

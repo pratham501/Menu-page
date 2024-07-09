@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="menu.css">
+    
+</head>
+<body>
+    <div class="menu-nav">
+    
+        <h1>From Our Menu</h1>
+        <div>
+            <button id="rotis" class="menu-button">Rotis</button>
+            <button id="curries" class="menu-button">Curries</button>
+            <button id="starters" class="menu-button">Starters</button>
+            <button id="desserts" class="menu-button">Desserts</button>
+            <button id="healthynhearty" class="menu-button">Healthy & Hearty</button><br><br>
+            <button id="soups" class="menu-button">Soups</button>
+            <button id="beverages" class="menu-button">Beverages</button>
+            <button id="snacks" class="menu-button">Snacks</button>
+
+        </div>
+
+    </div>
+    <div class="menu">
+        <div class="menu-dishes" id="menu-dishes">
+            <div class="rotis" id="rotisd"></div>
+            <div class="curries" id="curriesd"></div>
+            <div class="starters" id="startersd"></div>
+            <div class="desserts" id="dessertsd"></div>
+            <div class="healthynhearty" id="healthynheartyd"></div>
+            <div class="soups" id="soupsd"></div>
+            <div class="beverages" id="beveragesd"></div>
+            <div class="snacks" id="snacksd"></div>
+
+        </div>
+
+        <div class="inpage-cart">
+            <div class="satus-empty">
+                <p>Your order cart <br> is empty</p>
+                <img src="empty_processed.jpg" id="empty-cart" class="empty-cart" alt="">
+            </div>
+            <div class="items-added" >
+                <table border=0 id="cart-items" >
+                    <thead>
+                        <tr>
+                            <th>Product</th>
+                            <th></th>
+                            <th>Total</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tBody">
+
+                    </tbody>
+                    <tfoot>
+                        <td colspan="2">Total</td>
+                        <td id="totalAmount">$ XYZ</td>
+                    </tfoot>
+                    
+                </table>
+            </div>
+            
+            <button class="checkout-btn" style="display: none;">
+                Proceed to Checkout
+            </button>
+        </div>
+    </div>
+    <div id="quantitywindow"  class=" ">
+        <h2>Dish Title</h2>
+        <p>this is the dish description</p>
+        <br>
+        <!-- <p>₹ 100</p> -->
+        <button id="close-button">&#10005;</button>
+        <div class="add" >
+        <div class="addquantity">
+            <button class="side-buttons" id="minus-button">-</button>
+            <p id="quantity">1</p>
+            <button class="side-buttons" id="add-button">+</button>         
+        </div>
+        <button class="total">ADD TO CART | <span id="finalPrice"></span></button>
+        </div>
+    </div>
+
+    <div class="backdrop ">
+
+    </div>
+    <script src="menu.js"></script>
+
+</body>
+
+
+</html>
